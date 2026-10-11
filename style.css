@@ -1,0 +1,52 @@
+/* Barreleye Books site: five static pages, no scripts, no outside resources. */
+:root {
+  --bg: #fbfbf9;
+  --text: #1d2327;
+  --muted: #5c6670;
+  --accent: #1f5f7a;
+  --rule: #dde2e5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14181b;
+    --text: #e6e9eb;
+    --muted: #a3adb5;
+    --accent: #7fc0da;
+    --rule: #2c3337;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+}
+.brand {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+}
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 1.25rem; }
+p { margin: 0 0 1rem; }
+.note {
+  border-left: 3px solid var(--accent);
+  padding: 0.25rem 0 0.25rem 1rem;
+  color: var(--text);
+}
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+a { color: var(--accent); }
